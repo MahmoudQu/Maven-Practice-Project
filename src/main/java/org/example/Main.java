@@ -6,15 +6,11 @@ import java.io.IOException;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //copying here
+        File sourceFile = new File("C:\\Users\\mahmo\\Desktop\\source.txt");
 
-        File sourceFile = new File("C:\\Users\\mahmo\\Desktop\\test.txt");
+
         File destinationFile = new File("C:\\Users\\mahmo\\Desktop\\destination.txt");
 
         try {
             FileUtils.copyFile(sourceFile, destinationFile);
-            System.out.println("File copied successfully!");
-        } catch (IOException e) {
-            System.err.println("Error copying file: " + e.getMessage());
-        }
-    }
-}
